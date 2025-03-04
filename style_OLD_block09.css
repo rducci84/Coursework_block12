@@ -6,43 +6,36 @@ body {
     text-align: center;
     background-color: #e6f0fa;
     color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
 }
 
 header {
     background: #0077cc;
-    padding: 1rem;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 10;
 }
 
 .header-name {
-    font-size: 1.5rem;
+    font-size: 22px;
     font-weight: bold;
     color: white;
 }
 
 nav {
     display: flex;
-    gap: 1rem;
+    gap: 20px;
 }
 
 nav a {
     color: white;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 10px 20px;
     border-radius: 5px;
     background: #005fa3;
-    transition: background 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 nav a:hover {
@@ -50,21 +43,18 @@ nav a:hover {
 }
 
 nav a.active {
-    background: #003f73 !important;
+    background: #003f73;
     color: #ddd;
     pointer-events: none;
 }
 
 main {
     background: white;
-    margin: 1.25rem auto;
-    padding: 1.25rem;
-    max-width: 50vw;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 h1 {
@@ -73,40 +63,25 @@ h1 {
 
 .profile-img {
     border-radius: 50%;
-    width: 12.5vw;
-    height: 12.5vw;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border: 3px solid #0077cc;
-    margin-top: 1.25rem;
+    margin-top: 20px;
 }
 
 .profile02-img {
-    width: 18.75vw;
-    height: 12.5vw;
+    width: 300px;
+    height: 200px;
     object-fit: cover;
-    margin-top: 1.25rem;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1rem;
-    max-width: 80%;
-    margin: 2rem auto;
-    background: linear-gradient(to right, #e6f0fa, #ffffff);
-}
-
-.container div {
-    padding: 1rem;
-    border: 2px solid #0077cc;
+    margin-top: 20px;
 }
 
 footer {
     background: #0077cc;
     color: white;
-    padding: 1rem;
-    margin-top: 2rem;
-    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
 }
 
 footer a {
@@ -117,13 +92,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-    main {
-        max-width: 80vw;
-    }
 }
